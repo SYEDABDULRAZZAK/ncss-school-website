@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSM Public School</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #003366;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        .courses, .contact-form {
+            background-color: white;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #002244;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #004080;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OSM Public School</h1>
+        <p>Empowering Young Minds for a Bright Future</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to OSM Public School</h2>
+        <p>At OSM Public School, we strive to provide the best education with modern teaching techniques to nurture young minds.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Founded in 2005, OSM Public School has been a beacon of quality education, fostering creativity, leadership, and academic excellence.</p>
+    </section>
+
+    <section id="courses" class="courses">
+        <h2>Our Courses</h2>
+        <ul>
+            <li>Mathematics & Science Programs</li>
+            <li>Languages and Literature</li>
+            <li>Computer Science and Coding</li>
+            <li>Sports and Physical Education</li>
+            <li>Art and Music</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact-form">
+        <h2>Contact Us</h2>
+        <form onsubmit="submitForm(event)">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 OSM Public School | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            alert("Thank you for contacting us! We will get back to you soon.");
+        }
+    </script>
+</body>
+</html>
